@@ -6,7 +6,7 @@ License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.bz2
 URL:		http://www.sh.rim.or.jp/~ssato/wmmemmon-e.html
-BuildRequires:	XFree86-devel, xpm-devel, ImageMagick
+BuildRequires:	X11-devel, xpm-devel, ImageMagick
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
