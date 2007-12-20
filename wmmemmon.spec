@@ -36,11 +36,15 @@ convert icons/%{name}-16x16.xpm %buildroot%{_miconsdir}/%{name}.png
 convert icons/%{name}-32x32.xpm %buildroot%{_iconsdir}/%{name}.png
 convert icons/%{name}-48x48.xpm %buildroot%{_liconsdir}/%{name}.png
 
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/%{name}" icon="%{name}.png"\\
-                 needs="wmaker" section="Applications/Monitoring" title="WmMemMon"\\
-                 longtitle="Mem/Swap monitoring dockapp for WindowMaker"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{_bindir}/%{name}
+Icon=%{name}                 
+Categories=System;Monitor;
+Name=WmMemMon                 
+Comment=Mem/Swap monitoring dockapp for WindowMaker
 EOF
 
 
@@ -65,6 +69,6 @@ EOF
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_mandir}/man1/*
 
