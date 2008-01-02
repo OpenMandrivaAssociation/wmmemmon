@@ -7,6 +7,7 @@ Group:		Graphical desktop/WindowMaker
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.bz2
 URL:		http://www.sh.rim.or.jp/~ssato/wmmemmon-e.html
 BuildRequires:	X11-devel, xpm-devel, ImageMagick
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Mem/Swap monitoring dockapp for WindowMaker. Outside circle is Mem usage
