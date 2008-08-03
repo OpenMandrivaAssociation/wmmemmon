@@ -1,7 +1,7 @@
 Summary: Mem/Swap monitoring dockapp for WindowMaker
 Name:		wmmemmon
 Version: 1.0.1
-Release: %mkrel 4
+Release: %mkrel 5
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.bz2
