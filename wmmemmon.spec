@@ -1,7 +1,7 @@
 Summary: Mem/Swap monitoring dockapp for WindowMaker
 Name:		wmmemmon
 Version: 1.0.1
-Release: %mkrel 7
+Release: 8
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.bz2
@@ -10,7 +10,6 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	imagemagick
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Mem/Swap monitoring dockapp for WindowMaker. Outside circle is Mem usage
