@@ -5,7 +5,7 @@ Release: 9
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.bz2
-URL:		http://www.sh.rim.or.jp/~ssato/wmmemmon-e.html
+URL:		https://www.sh.rim.or.jp/~ssato/wmmemmon-e.html
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xext)
